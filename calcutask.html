@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <style>
+            h1{
+    text-align:center ;
+    font-family: Florence, cursive;
+    text-decoration:underline ;
+    font-size:45px;
+    padding: 0 0 50px 0;
+}
+body{
+/* background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%); */
+background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+/* height:650px; */
+text-align: center;
+padding: 90px 0 0 0;
+} 
+/* /textbox/ */
+#e{
+    border-radius:4px; height:20px;
+    width:13%;
+    }
+#f{
+    border-radius:4px; height:20px;
+    width: 13%;
+} 
+#g{
+    border-radius:4px; height:20px;
+    width:13%;
+}
+/* /button code/ */
+/* /add/ */
+#h{ margin-left:5px;
+   font-size:20px;
+   font-weight:bolder ;
+   width:150px;
+   height:40px;
+   color:white;
+   background-color:#1F45FC;
+   border-radius:6px;
+}
+/* /sub/ */
+#i{ 
+   
+   font-size:20px;
+   font-weight:bolder;
+   text-align:center;
+    width:150px;
+    height:40px;
+    color:white;
+    background-color:#1F45FC;
+    border-radius:6px;
+    margin-left:20px;
+}
+/* /multi/ */
+#j{
+    width:150px;
+    height:40px;
+    font-size:20px;
+    font-weight:bolder;
+    margin-top:20px;
+    margin-left:5px;
+    color:white;
+    background-color:#1F45FC;
+    border-radius:6px;
+} 
+/* /div/ */
+#k{
+    width:150px;
+    height:40px;
+    font-size:20px;
+    font-weight:bolder;
+    margin-left:20px;
+    color:white;
+    background-color:#1F45FC;
+    border-radius:6px;
+}
+/* /clear/ */
+#button1{ 
+  font-size:20px;
+  font-weight:bolder;
+   /* width:100%; */
+   height:40px;
+   margin-top:20px;
+   color:white;
+   background-color:#1F45FC;
+   border-radius:6px;
+  }
+        </style>
+    </head>
+    <body>
+        <h1>Simple calculator</h1>
+    <input type="number" id="e" placeholder="Enter first  number"><br /><br />
+        <input type="number" id="f" placeholder="Enter second number"><br />
+            
+        <br />
+        <input type="number" id="g" placeholder="Result...."><br /><br />
+        <input type="button" value="+" onclick="a()"id="h">
+        <input type="button" value="-" onclick="b()"id="i"><br />
+        <input type="button" value="*" onclick="c()"id="j">
+        <input type="button" value="÷" onclick="d()"id="k"><br />
+        <button type="button" id="button1" onClick="clearIt()">Clear</button>
+    
+    </body>
+
+    <script>
+        function a()
+{ 
+var x=parseInt(document.getElementById("e").value);
+ var y=parseInt(document.getElementById("f").value);
+ var z=x+y; document.getElementById("g").value=z ;
+} 
+//for subtraction
+function b()
+{ 
+var x=parseInt(document.getElementById("e").value);
+ var y=parseInt(document.getElementById("f").value);
+ var z=x-y; 
+  document.getElementById("g").value=z;
+} 
+//for multiplication
+function c()
+{ 
+var x=parseInt(document.getElementById("e").value);
+ var y=parseInt(document.getElementById("f").value);
+ var z=x*y; 
+  document.getElementById("g").value=z ;
+} 
+//for division 
+function d()
+{ 
+var x=parseInt(document.getElementById("e").value);
+ var y=parseInt(document.getElementById("f").value);
+ var z=x/y; 
+  document.getElementById("g").value=z ;
+} 
+//clear button 
+function clearIt() { 
+document.getElementById('e').value = "";
+document.getElementById('f').value = "";
+ document.getElementById('g').value = "";
+}
+    </script>
+</html>
